@@ -9,7 +9,7 @@ QAProject/buildNumber.properties
 QAProject/.mvn/timing.properties
 
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
-QACinemas/!/.mvn/wrapper/maven-wrapper.jar
+QAProject/!/.mvn/wrapper/maven-wrapper.jar
 
 #Eclipse
 QAProject/.settings
