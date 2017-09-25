@@ -1,17 +1,17 @@
-QACinemas/target/
-QACinemas/pom.xml.tag
-QACinemas/pom.xml.releaseBackup
-QACinemas/pom.xml.versionsBackup
-QACinemas/pom.xml.next
-QACinemas/release.properties
-QACinemas/dependency-reduced-pom.xml
-QACinemas/buildNumber.properties
-QACinemas/.mvn/timing.properties
+QAProject/target/
+QAProject/pom.xml.tag
+QAProject/pom.xml.releaseBackup
+QAProject/pom.xml.versionsBackup
+QAProject/pom.xml.next
+QAProject/release.properties
+QAProject/dependency-reduced-pom.xml
+QAProject/buildNumber.properties
+QAProject/.mvn/timing.properties
 
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 QACinemas/!/.mvn/wrapper/maven-wrapper.jar
 
 #Eclipse
-QACinemas/.settings
-QACinemas/.classpath
-QACinemas/.project
+QAProject/.settings
+QAProject/.classpath
+QAProject/.project
