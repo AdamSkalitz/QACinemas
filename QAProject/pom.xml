@@ -14,8 +14,27 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.1.0</version>
+    <scope>provided</scope>
+</dependency>
   </dependencies>
   <build>
     <finalName>QAProject</finalName>
+           <plugins>
+ 
+            <!-- Config: Maven Tomcat Plugin -->
+            <!-- http://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat7-maven-plugin -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <!-- Config: contextPath and Port (Default - /SpringMVCAnnotationShoppingCart
+                    : 8080) -->
+                <!-- <configuration> <path>/</path> <port>8899</port> </configuration> -->
+            </plugin>
+        </plugins>
   </build>
 </project>
