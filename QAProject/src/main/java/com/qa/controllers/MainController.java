@@ -16,9 +16,21 @@ public class MainController {
 		public String Home (HttpServletRequest request) {
 			return "Home";
 		}
+		
+		
+		
+		@RequestMapping("/ProductDetails")
+		public String productDetails (HttpServletRequest request) {
+			return "ProductDetails";
+		}
+		
+		
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
+	
+	
+	
 
 }
