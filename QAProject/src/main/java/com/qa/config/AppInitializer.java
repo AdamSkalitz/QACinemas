@@ -1,4 +1,4 @@
-package com.qa.config;
+/*package com.qa.config;
 
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;
@@ -38,4 +38,4 @@ public class AppInitializer implements WebApplicationInitializer {
         fr.addMappingForUrlPatterns(null, true, "/*");
     }
  
-}
+}*/

@@ -38,10 +38,7 @@ public class MainController {
 			return "ProductDetails";
 		}
 		
-		@RequestMapping("/ProductGallery")
-		public String productGallery (HttpServletRequest request) {
-			return "ProductGallery";
-		}
+	
 		
 		
 	public static void main(String[] args) {

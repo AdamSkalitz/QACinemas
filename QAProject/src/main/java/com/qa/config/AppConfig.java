@@ -1,4 +1,4 @@
-package com.qa.config;
+/*package com.qa.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,3 +19,4 @@ public class AppConfig {
         return viewResolver;
     }
 }
+*/
