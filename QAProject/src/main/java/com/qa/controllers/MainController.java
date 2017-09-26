@@ -48,6 +48,11 @@ public class MainController {
 			return "ThankYou";
 		}
 		
+		@RequestMapping("/ShoppingBasket")
+		public String shoppingCart(HttpServletRequest request) {
+			return "ShoppingBasket";
+		}
+		
 		
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
