@@ -7,10 +7,7 @@
 	<div class="row">
 
 		<div class="col-md-2">
-
-			<a href="/QAProject/">Return to gallery</a>
-
-
+			<a href="/QAProject/ProductGallery">Return to gallery</a>
 		</div>
 
 		<div class="col-md-10">

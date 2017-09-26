@@ -17,11 +17,25 @@ public class MainController {
 			return "Home";
 		}
 		
+		@RequestMapping("/Signin")
+		public String signIn (HttpServletRequest request) {
+			return "Signin";
+		}
+		
+		@RequestMapping("/Registration")
+		public String registration(HttpServletRequest request) {
+			return "Registration";
+		}
 		
 		
 		@RequestMapping("/ProductDetails")
 		public String productDetails (HttpServletRequest request) {
 			return "ProductDetails";
+		}
+		
+		@RequestMapping("/ProductGallery")
+		public String productGallery (HttpServletRequest request) {
+			return "ProductGallery";
 		}
 		
 		
