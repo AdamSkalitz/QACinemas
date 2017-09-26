@@ -1,11 +1,11 @@
-create table ProductCategory(
+create table ProductCategories(
 ProductCategoryID int not null identity(0,1),
 Name varchar(50) not null,
 ModifiedDate date not null
 primary key (ProductCategoryID)
 );
 
-create table ProductSubCategory(
+create table ProductSubCategories(
 ProductSubCategoryID int not null identity(0,1),
 ProductCategoryID int not null,
 Name varchar(50) not null,
@@ -15,7 +15,7 @@ foreign key (ProductCategoryID)
 references ProductCategory(ProductCategoryID)
 );
 
-create table Product (
+create table Products(
 ProductID int not null identity(0,1),
 ProductSubCategoryID int null,
 Name varchar(50) not null,
@@ -31,7 +31,7 @@ foreign key (ProductSubCategoryID)
 references ProductSubCategory(ProductSubCategoryID)
 );
 
-create table Account(
+create table Accounts(
 AccountID int not null identity(0,1),
 AddressID int null,
 Name varchar(50) not null,
