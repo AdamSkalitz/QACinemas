@@ -1,38 +1,3 @@
-DECLARE @sql NVARCHAR(MAX) = N'';
-
-;WITH x AS 
-(
-  SELECT DISTINCT obj = 
-      QUOTENAME(OBJECT_SCHEMA_NAME(parent_object_id)) + '.' 
-    + QUOTENAME(OBJECT_NAME(parent_object_id)) 
-  FROM sys.foreign_keys
-)
-SELECT @sql += N'ALTER TABLE ' + obj + ' NOCHECK CONSTRAINT ALL;
-' FROM x;
-
-EXEC sp_executesql @sql;
-
-drop table dbo.ProductCategory
-drop table dbo.ProductSubCategory
-drop table dbo.Product
-drop table dbo.Account
-drop table dbo.Addresses
-drop table dbo.Orders
-drop table dbo.OrderDetails
-
-;WITH x AS 
-(
-  SELECT DISTINCT obj = 
-      QUOTENAME(OBJECT_SCHEMA_NAME(parent_object_id)) + '.' 
-    + QUOTENAME(OBJECT_NAME(parent_object_id)) 
-  FROM sys.foreign_keys
-)
-SELECT @sql += N'ALTER TABLE ' + obj + ' WITH CHECK CHECK CONSTRAINT ALL;
-' FROM x;
-
-EXEC sp_executesql @sql;
-
-
 create table ProductCategory(
 ProductCategoryID int not null identity(0,1),
 Name varchar(50) not null,
@@ -93,10 +58,10 @@ create table Orders(
 OrderID int not null identity(0,1),
 AccountID int null,
 Amount int not null,
-CustomerAddress varchar(50) not null,
+CustomerAddress varchar(100) not null,
 CustomerEmail varchar(20) not null,
-CustomerName varchar(20)  not null,
-CustomerPhone varchar(10) not null,
+CustomerName varchar(40)  not null,
+CustomerPhone varchar(11) not null,
 OrderDate Date not null,
 OrderNum int not null, 
 ModifiedDate date not null,
@@ -152,5 +117,13 @@ values(5.98,24.99,4,getdate())
 
 
 
+insert into ProductCategory(ProductCategoryID, Name, ModifiedDate)
+values (1, 'Toys', 'Jan-10-1999');
 
-												
+insert into ProductSubCategory (ProductSubCategoryID, ProductCategoryID, Name, ModifiedDate)
+values (1, 1, 'Lego', 'Jan-10-1999');
+
+insert into Product (ProductID, ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight) values
+	(1, 1, 'LEGO Death Star', 'Lego death star that leeky really wants to buy with his hard earned dollery doos.', 'Black', 400, 400, '20X2', 60.7);	
+
+select * from Product;
