@@ -27,6 +27,11 @@ public class MainController {
 			return "Registration";
 		}
 		
+		@RequestMapping("/Checkout")
+		public String checkout(HttpServletRequest request) {
+			return "Checkout";
+		}
+		
 		
 		@RequestMapping("/ProductDetails")
 		public String productDetails (HttpServletRequest request) {
