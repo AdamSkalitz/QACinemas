@@ -33,10 +33,10 @@ references ProductSubCategory(ProductSubCategoryID)
 
 create table Account(
 AccountID int not null identity(0,1),
-AddressID int not null,
+AddressID int null,
 Name varchar(50) not null,
 Email varchar(30) not null,
-Phone varchar(10) not null,
+Phone varchar(11) not null,
 Password varchar(50) not null,
 ModifiedDate date not null
 primary key(AccountID)
@@ -81,8 +81,6 @@ ProductID int not null,
 primary key(OrderDetailsID),
 foreign key(OrderID)
 references Orders(OrderID),
-foreign key(ProductID)
-references Product(ProductID)
 );
 
 
@@ -92,12 +90,18 @@ values('Toys',getdate())
 insert into ProductSubCategory(Name,ProductCategoryID, ModifiedDate)
 values('Dolls',0,getdate())
 
+insert into ProductSubCategory(Name,ProductCategoryID, ModifiedDate)
+values('Lego',0,getdate())
+
+insert into Product (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
+values (1, 'LEGO Death Star', 'Lego death star that leeky really wants to buy with his hard earned dollery doos.', 'Black', 400, 400, '20X2', 60.7,getdate());	
+
 /*Guest checkout order */
 insert into Orders(Amount,CustomerName,CustomerAddress,CustomerEmail,CustomerPhone,OrderDate,OrderNum,ModifiedDate)
 values(24.99,'Name SecondName','100 Fake Street','name@email.com','07787487523',getdate(), 0,getdate());
 
-insert into OrderDetails(Price,Amount,Quantity,ModifiedDate)
-values(5.98,24.99,4,getdate())
+insert into OrderDetails(OrderID,ProductID,Price,Amount,Quantity,ModifiedDate)
+values(0,2,5.98,24.99,4,getdate())
 
 insert into Account(Name,Email,Phone,Password,ModifiedDate)
 values('UserName','name@email.com','07787487545','password',getdate())
@@ -106,24 +110,11 @@ insert into Addresses(AccountID,Address,Postcode,City,ModifiedDate)
 values(0,'45 NotReal Street','G5 678','Glasgow',getdate())
 
 /*Account checkout order*/
-insert into Orders(Amount,CustomerName,CustomerAddress,CustomerEmail,CustomerPhone,OrderDate,OrderNum,ModifiedDate)
-values(24.99,'Name SecondName','100 Fake Street','name@email.com','07787487523',getdate(), 0,getdate());
+insert into Orders(AccountID,Amount,CustomerName,CustomerAddress,CustomerEmail,CustomerPhone,OrderDate,OrderNum,ModifiedDate)
+values(0,24.99,'Name SecondName','100 Fake Street','name@email.com','07787487523',getdate(), 0,getdate());
 
-insert into OrderDetails(Price,Amount,Quantity,ModifiedDate)
-values(5.98,24.99,4,getdate())
+insert into OrderDetails(OrderID,ProductID,Price,Amount,Quantity,ModifiedDate)
+values(0,2,5.98,24.99,4,getdate())
 
-
-
-
-
-
-insert into ProductCategory(ProductCategoryID, Name, ModifiedDate)
-values (1, 'Toys', 'Jan-10-1999');
-
-insert into ProductSubCategory (ProductSubCategoryID, ProductCategoryID, Name, ModifiedDate)
-values (1, 1, 'Lego', 'Jan-10-1999');
-
-insert into Product (ProductID, ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight) values
-	(1, 1, 'LEGO Death Star', 'Lego death star that leeky really wants to buy with his hard earned dollery doos.', 'Black', 400, 400, '20X2', 60.7);	
 
 select * from Product;
