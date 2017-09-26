@@ -43,6 +43,11 @@ public class MainController {
 			return "ProductGallery";
 		}
 		
+		@RequestMapping("/ThankYou")
+		public String thankYou(HttpServletRequest request) {
+			return "ThankYou";
+		}
+		
 		
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
