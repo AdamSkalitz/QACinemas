@@ -8,7 +8,7 @@
 
 		<div class="col-md-2">
 
-			<a href="#">Return to gallery</a>
+			<a href="/QAProject/">Return to gallery</a>
 
 
 		</div>
@@ -60,7 +60,7 @@
 					<h4 class="card-title">Card title</h4>
 					<p class="card-text">Some quick example text to build on the
 						card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+					<a href="/QAProject/ProductDetails" class="btn btn-primary">Go somewhere</a>
 				</div>
 			</div>
 		</div>
@@ -73,7 +73,7 @@
 					<h4 class="card-title">Card title</h4>
 					<p class="card-text">Some quick example text to build on the
 						card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+					<a href="/QAProject/ProductDetails" class="btn btn-primary">Go somewhere</a>
 				</div>
 			</div>
 		</div>
@@ -86,7 +86,7 @@
 					<h4 class="card-title">Card title</h4>
 					<p class="card-text">Some quick example text to build on the
 						card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+					<a href="/QAProject/ProductDetails" class="btn btn-primary">Go somewhere</a>
 				</div>
 			</div>
 		</div>
@@ -99,7 +99,7 @@
 					<h4 class="card-title">Card title</h4>
 					<p class="card-text">Some quick example text to build on the
 						card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+					<a href="/QAProject/ProductDetails" class="btn btn-primary">Go somewhere</a>
 				</div>
 			</div>
 		</div>
