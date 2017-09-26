@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.RowMapper;
 
 import com.qa.models.Product;
 
-public class ProductDAOImpl implements ProductDAO {
+public class ProductDAO implements IProductDAO {
 	
 	
 	private JdbcTemplate jdbcTemplate = null;

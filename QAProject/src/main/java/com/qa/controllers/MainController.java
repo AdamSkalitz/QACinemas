@@ -37,16 +37,6 @@ public class MainController {
 		public String productDetails (HttpServletRequest request) {
 			return "ProductDetails";
 		}
-		
-	
-		
-		
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-	
-	
 	
 
 }

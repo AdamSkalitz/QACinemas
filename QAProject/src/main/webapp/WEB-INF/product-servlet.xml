@@ -30,7 +30,7 @@
 		<property name="dataSource" ref="QAStoreDataSource" />
 	</bean>
 
-	<bean id="productService" class="com.qa.dao.ProductDAOImpl">
+	<bean id="productService" class="com.qa.dao.ProductDAO">
 		<property name="jdbcTemplate" ref="jdbcTemplate" />
 	</bean>
 
