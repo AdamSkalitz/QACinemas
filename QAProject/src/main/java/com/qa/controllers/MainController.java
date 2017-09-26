@@ -37,6 +37,12 @@ public class MainController {
 		public String productDetails (HttpServletRequest request) {
 			return "ProductDetails";
 		}
+		
+		@RequestMapping("/ThankYou")
+		public String thankYou(HttpServletRequest request) {
+			return "ThankYou";
+		}
+		
 	
 
 }

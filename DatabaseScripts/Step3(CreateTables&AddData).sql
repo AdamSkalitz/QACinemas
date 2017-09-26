@@ -1,3 +1,4 @@
+
 create table ProductCategories(
 ProductCategoryID int not null identity(0,1),
 Name varchar(50) not null,
@@ -12,7 +13,7 @@ Name varchar(50) not null,
 ModifiedDate date not null,
 primary key (ProductSubCategoryID),
 foreign key (ProductCategoryID) 
-references ProductCategory(ProductCategoryID)
+references ProductCategories(ProductCategoryID)
 );
 
 create table Products(
@@ -28,7 +29,7 @@ Weight double precision null,
 ModifiedDate date not null
 primary key (ProductID),
 foreign key (ProductSubCategoryID)
-references ProductSubCategory(ProductSubCategoryID)
+references ProductSubCategories(ProductSubCategoryID)
 );
 
 create table Accounts(
@@ -51,7 +52,7 @@ City varchar(30),
 ModifiedDate date not null,
 primary key (AddressID),
 foreign key (AccountID)
-references Account(AccountID)
+references Accounts(AccountID)
 );
 
 create table Orders(
@@ -67,7 +68,7 @@ OrderNum int not null,
 ModifiedDate date not null,
 primary key(OrderID),
 foreign key(AccountID)
-references Account(AccountID)
+references Accounts(AccountID)
 );
 
 create table OrderDetails(
@@ -84,16 +85,16 @@ references Orders(OrderID),
 );
 
 
-insert into ProductCategory(Name,ModifiedDate)
+insert into ProductCategories(Name,ModifiedDate)
 values('Toys',getdate())
 
-insert into ProductSubCategory(Name,ProductCategoryID, ModifiedDate)
+insert into ProductSubCategories(Name,ProductCategoryID, ModifiedDate)
 values('Dolls',0,getdate())
 
-insert into ProductSubCategory(Name,ProductCategoryID, ModifiedDate)
+insert into ProductSubCategories(Name,ProductCategoryID, ModifiedDate)
 values('Lego',0,getdate())
 
-insert into Product (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
+insert into Products (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
 values (1, 'LEGO Death Star', 'Lego death star that leeky really wants to buy with his hard earned dollery doos.', 'Black', 400, 400, '20X2', 60.7,getdate());	
 
 /*Guest checkout order */
@@ -103,7 +104,7 @@ values(24.99,'Name SecondName','100 Fake Street','name@email.com','07787487523',
 insert into OrderDetails(OrderID,ProductID,Price,Amount,Quantity,ModifiedDate)
 values(0,2,5.98,24.99,4,getdate())
 
-insert into Account(Name,Email,Phone,Password,ModifiedDate)
+insert into Accounts(Name,Email,Phone,Password,ModifiedDate)
 values('UserName','name@email.com','07787487545','password',getdate())
 
 insert into Addresses(AccountID,Address,Postcode,City,ModifiedDate)
@@ -117,4 +118,4 @@ insert into OrderDetails(OrderID,ProductID,Price,Amount,Quantity,ModifiedDate)
 values(0,2,5.98,24.99,4,getdate())
 
 
-select * from Product;
+select * from Products;
