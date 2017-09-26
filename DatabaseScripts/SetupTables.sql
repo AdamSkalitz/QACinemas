@@ -1,3 +1,18 @@
+SELECT 
+    'ALTER TABLE [' +  OBJECT_SCHEMA_NAME(parent_object_id) +
+    '].[' + OBJECT_NAME(parent_object_id) + 
+    '] DROP CONSTRAINT [' + name + ']'
+FROM sys.foreign_keys
+WHERE referenced_object_id = object_id('Student')
+
+drop table ProductCategory;
+drop table ProductSubCategory;
+drop table Product;
+drop table Account;
+drop table Addresses;
+drop table Orders;
+drop table OrderDetails;
+
 create table ProductCategory(
 ProductCategoryID int not null,
 Name varchar(50) not null,
@@ -87,23 +102,13 @@ references Product(ProductID)
 );
 
 
-insert into Account(AddressID,Name,Email,Phone,Password)
-values(0?,'UserName','name@email.com',07787487545,'password')
+insert into ProductCategory(ProductCategoryID, Name, ModifiedDate)
+values (1, 'Toys', 'Jan-10-1999');
 
-insert into Addresses(AccountID,Address,Postcode,City)
-values(0?,'45 NotReal Street','G5 678','Glasgow')
+insert into ProductSubCategory (ProductSubCategoryID, ProductCategoryID, Name, ModifiedDate)
+values (1, 1, 'Lego', 'Jan-10-1999');
 
-insert into Orders(Amount,CustomerAddress,CustomerEmail,CustomerPhone,OrderDate,OrderNum)
-values(24.99,'100 Fake Street','name@email.com',07787487523, 0);
+insert into Product (ProductID, ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight) values
+	(1, 1, 'LEGO Death Star', 'Lego death star that leeky really wants to buy with his hard earned dollery doos.', 'Black', 400, 400, '20X2', 60.7);	
 
-insert into OrderDetails(Price,Amount,Quantity)
-values(5.98,24.99,4)
-
-insert into ProductCategory(Name,ModifiedDate)
-values('Toys',now)
-
-insert into ProductSubCategory(Name,ProductCategoryID, ModifiedDate)
-values('Dolls',0?)
-
-
-												
+select * from Product;
