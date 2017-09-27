@@ -6,6 +6,7 @@
 	
 	<div class="container">
 	<h2>Shopping Basket</h2>
+	${sessionScope.item}
 	<table class="table table-striped">
   <thead class="thead-inverse">
     <tr>

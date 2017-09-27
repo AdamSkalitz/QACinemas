@@ -11,7 +11,6 @@
 <body>
 	<%@ include file="common/nav.jspf"%>
 	
-
 	<h1>Product Gallery</h1>
 	
 	
