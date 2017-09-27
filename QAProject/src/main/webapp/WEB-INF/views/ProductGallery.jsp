@@ -4,7 +4,8 @@
 <%@ include file="common/header.jspf"%>
 <body>
 	<%@ include file="common/nav.jspf"%>
-
+	
+	${sessionScope.item}
 	<h1>Product Gallery</h1>
 	<div class="row">
 		<div class="col-md-3">

@@ -1,5 +1,7 @@
 package com.qa.controllers;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -21,11 +23,11 @@ public class ProductController {
 	public String showProducts(ModelMap model) {
 		
 		model.addAttribute("products", service.getAllProducts());
-		
-		
 		System.out.println(model.size());
 		
 		return "ProductGallery";
 	}
+	
+	
 	
 }

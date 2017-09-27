@@ -45,6 +45,7 @@ public class MainController {
 		
 		@RequestMapping("/ShoppingBasket")
 		public String shoppingCart(HttpServletRequest request) {
+			request.getSession().setAttribute("item", "LEGO DAN");
 			return "ShoppingBasket";
 		}
 }
