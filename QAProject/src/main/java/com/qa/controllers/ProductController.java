@@ -19,12 +19,7 @@ public class ProductController {
 	
 	@RequestMapping(value = "/ProductGallery", method = RequestMethod.GET)
 	public String showProducts(ModelMap model) {
-		
 		model.addAttribute("products", service.getAllProducts());
-		
-		
-		System.out.println(model.size());
-		
 		return "ProductGallery";
 	}
 	
