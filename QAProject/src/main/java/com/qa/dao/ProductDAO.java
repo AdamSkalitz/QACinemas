@@ -25,7 +25,6 @@ public class ProductDAO implements IProductDAO {
 	}
 	
 	public List<Product> getAllProducts() {
-		
 		RowMapper<Product> mapper = new ProductRowMapper();
 		String sql = "select * from Products";
 		return getJdbcTemplate().query(sql, mapper);

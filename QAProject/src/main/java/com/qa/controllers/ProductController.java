@@ -22,14 +22,12 @@ public class ProductController {
 	@RequestMapping(value = "/ProductGallery", method = RequestMethod.GET)
 	public String showProducts(ModelMap model) {
 		model.addAttribute("products", service.getAllProducts());
-		System.out.println(model.size());
 		return "ProductGallery";
 	}
 	
 	@RequestMapping(value = "/ProductDetails", method = RequestMethod.GET)
 	public String showProduct(ModelMap model) {
 		Product p = service.getProductByID(0);
-		System.out.println(p.getImage());
 		model.addAttribute("products",p );
 		return "ProductDetails";
 	}

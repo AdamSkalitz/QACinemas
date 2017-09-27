@@ -11,7 +11,7 @@ public class Product implements Serializable {
 	private int ID;
 	private int ProductSubCategoryID;
 	private String Name;
-	private String Color;
+	private String Colour;
 	private String Description;
 	private double StandardCost;
 	private double ListPrice;
@@ -25,12 +25,12 @@ public class Product implements Serializable {
 		
 	}
 	
-	public Product(int ProductSubCategoryID,String Name,String Color,String Description,double StandardCost,
+	public Product(int ProductSubCategoryID,String Name,String Colour,String Description,double StandardCost,
 			double ListPrice, String Size, double Weight, String image, Date ModifiedDate ){
-		
+
 		this.ProductSubCategoryID = ProductSubCategoryID;
 		this.Name = Name;
-		this.Color = Color;
+		this.Colour = Colour;
 		this.Description = Description;
 		this.StandardCost = StandardCost;
 		this.ListPrice = ListPrice;
@@ -65,12 +65,12 @@ public class Product implements Serializable {
 		Name = name;
 	}
 
-	public String getColor() {
-		return Color;
+	public String getColour() {
+		return Colour;
 	}
 
-	public void setColor(String color) {
-		Color = color;
+	public void setColour(String colour) {
+		Colour = colour;
 	}
 
 	public String getDescription() {

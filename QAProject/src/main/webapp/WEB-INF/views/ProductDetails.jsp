@@ -24,7 +24,7 @@
 				src="${products.getImage()}" width=500 height=500 />
 		</div>
 		<div class="col-md-6">
-			Colour: ${products.getColor()}
+			Colour: ${products.getColour()}
 			<br>
 			Description:
 			<p>${products.getDescription()}</p>
