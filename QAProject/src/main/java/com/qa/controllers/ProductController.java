@@ -26,8 +26,8 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value = "/ProductDetails", method = RequestMethod.GET)
-	public String showProduct(ModelMap model) {
-		Product p = service.getProductByID(0);
+	public String showProduct(ModelMap model, @RequestParam int id) {
+		Product p = service.getProductByID(id);
 		model.addAttribute("products",p );
 		return "ProductDetails";
 	}

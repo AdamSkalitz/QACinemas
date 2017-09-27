@@ -21,9 +21,9 @@
 	<div class="row">
 		<div class="col-md-4">
 			<img
-				src="${products.getImage()}" width=500 height=500 />
+				src="${products.getImage()}" width=400 height=400 />
 		</div>
-
+<div class="col-md-8">
 			Colour: ${products.getColour()}
 			<br>
 			Description:
@@ -34,19 +34,19 @@
 			<br>
 			Weight: ${products.getWeight()}
 			<br>
-		</div>
+
 	
-		<div class="row">
-		<div class="col-md-4">
+
+		<div class="col-md-2">
 			<button class="btn">Add to cart</button>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-2">
 			<input class="btn" value="1">Quantity</input>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-2">
 			<button class="btn">Options</button>
 
-		</div>
+</div>
 	</div>
 	</div>
 	</div>

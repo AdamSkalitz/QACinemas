@@ -37,20 +37,19 @@
 	<c:forEach  var="product" items="${products}">
 	
 		<!-- Card -->
-		<div class="col-md-3">			
+		<div "class="col-md-3">			
 			<div class="card" style="width: 20rem;">
-  			<img class="card-img-top" src="https://truimg.toysrus.com/product/images/38B64981.zoom.jpg?fit=inside|356:368" alt="Card image cap">
+  			<img class="card-img-top" width=250 height=250 src="${product.getImage()}" alt="Card image cap">
   			<div class="card-block">
     		<h4 class="card-title">${product.name}</h4>
-    		<p class="card-text">${product.description}</p>
   			</div>
   			<ul class="list-group list-group-flush">
     		<li class="list-group-item">£ ${product.listPrice}</li>
-    		<li class="list-group-item">Colour: ${product.colour}</li>
   			</ul>
   			<div class="card-block">
-    		<a href="/QAProject/ProductDetails" class="btn btn-primar">More Details</a>
-    		<a href="/QAProject/ProductDetails" class="btn btn-primar">Add to Cart</a>
+    	
+    		<button id="${product.ID }" class="btn btn-primar">More Details</button>
+    		<a href="#" class="btn btn-primar">Add to Cart</a>
   			</div>
 			</div>
 		</div>
@@ -59,9 +58,16 @@
   
 		</div>
 
-		
-
-
-
-
 	<%@ include file="common/footer.jspf"%>
+		<script>
+		
+		$(document).on('click', 'button', function () {
+		    var id = this.id
+		    
+		    window.location.href="/QAProject/ProductDetails?id="+id
+		});
+	
+
+		</script>
+	
+	
