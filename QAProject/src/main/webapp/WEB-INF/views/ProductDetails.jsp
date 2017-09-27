@@ -33,6 +33,7 @@
 				the 1960s with the release of Letraset sheets containing Lorem Ipsum
 				passages, and more recently with desktop publishing software like
 				Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<label>£2.99</label>
 			<dic class="row">
 			<div class="col-md-4">
 				<button class="btn">Add to cart</button>

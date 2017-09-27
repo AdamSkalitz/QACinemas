@@ -31,7 +31,7 @@
   <input type="text" name="Address2"><br>
    Post code:<br>
   <input type="text" name="Postcode"><br>
-   <button type="button" class="Checkoutbtn">Checkout</button><br>
+   <button type="button" class="Checkoutbtn"><a href="/QAProject/ThankYou">Checkout</a></button><br>
  </form> 
 			</div>
 		</div>

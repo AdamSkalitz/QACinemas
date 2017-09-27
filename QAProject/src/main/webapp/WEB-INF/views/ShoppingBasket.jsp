@@ -18,27 +18,18 @@
   </thead>
   <tbody>
     <tr>
-      <td><img src="https://www.dobbies.com/ImageGen.ashx?image=/media/12057659/monte-carlo-chair.jpg&Class=ProductThumbnail" class="img-responsive" alt="Cinque Terre">
-       Alexander Rose Monte Carlo Hanging Chair
+      <td><img src="http://www.collectiondx.com/gallery2/gallery/d/36613-2/prototype.jpg" class="img-responsive" alt="Cinque Terre">
+       Superman Toy
       </td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>1</td>
+      <td>£2.99</td>
+      <td>£2.99</td>
     </tr>
-    <tr>
-      <th>2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+
   </tbody>
 </table>
+
+<button class="btn" ><a href="/QAProject/Checkout">Checkout</a></button>
 	</div>
 
 	<%@ include file="common/footer.jspf"%>

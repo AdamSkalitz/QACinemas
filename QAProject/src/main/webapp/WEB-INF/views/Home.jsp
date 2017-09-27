@@ -57,12 +57,13 @@
 		<!-- Card -->
 		<div class="col-md-3">
 			<div class="card" style="width: 20rem;">
-				<img class="card-img-top" src="https://truimg.toysrus.com/product/images/38B64981.zoom.jpg?fit=inside|356:368" alt="Card image cap">
+				<img class="card-img-top" src="http://www.collectiondx.com/gallery2/gallery/d/36613-2/prototype.jpg" alt="Card image cap">
 				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
+					<h4 class="card-title">Superman Toy</h4>
 					<p class="card-text">Some quick example text to build on the
 						card title and make up the bulk of the card's content.</p>
-					<a href="/QAProject/ProductDetails" class="btn btn-primary">Go somewhere</a>
+					<label>£2.99</label>
+					<a href="/QAProject/ProductDetails" class="btn btn-primary">More Info</a>
 				</div>
 			</div>
 		</div>
@@ -70,12 +71,13 @@
 		<!-- Card 2-->
 		<div class="col-md-3">
 			<div class="card" style="width: 20rem;">
-				<img class="card-img-top" src="https://truimg.toysrus.com/product/images/38B64981.zoom.jpg?fit=inside|356:368" alt="Card image cap">
+				<img class="card-img-top" src="http://www.collectiondx.com/gallery2/gallery/d/36613-2/prototype.jpg" alt="Card image cap">
 				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
+					<h4 class="card-title">Superman Toy</h4>
 					<p class="card-text">Some quick example text to build on the
 						card title and make up the bulk of the card's content.</p>
-					<a href="/QAProject/ProductDetails" class="btn btn-primary">Go somewhere</a>
+					<label>£2.99</label>
+					<a href="/QAProject/ProductDetails" class="btn btn-primary">More Info</a>
 				</div>
 			</div>
 		</div>
@@ -83,12 +85,13 @@
 		<!-- Card 3-->
 		<div class="col-md-3">
 			<div class="card" style="width: 20rem;">
-				<img class="card-img-top" src="https://truimg.toysrus.com/product/images/38B64981.zoom.jpg?fit=inside|356:368" alt="Card image cap">
+				<img class="card-img-top" src="http://www.collectiondx.com/gallery2/gallery/d/36613-2/prototype.jpg" alt="Card image cap">
 				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
+					<h4 class="card-title">Superman Toy</h4>
 					<p class="card-text">Some quick example text to build on the
 						card title and make up the bulk of the card's content.</p>
-					<a href="/QAProject/ProductDetails" class="btn btn-primary">Go somewhere</a>
+						<label>£2.99</label>
+					<a href="/QAProject/ProductDetails" class="btn btn-primary">More Info</a>
 				</div>
 			</div>
 		</div>
@@ -96,12 +99,13 @@
 		<!-- Card 4-->
 		<div class="col-md-3">
 			<div class="card" style="width: 20rem;">
-				<img class="card-img-top" src="https://truimg.toysrus.com/product/images/38B64981.zoom.jpg?fit=inside|356:368" alt="Card image cap">
+				<img class="card-img-top" src="http://www.collectiondx.com/gallery2/gallery/d/36613-2/prototype.jpg" alt="Card image cap">
 				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
+					<h4 class="card-title">Superman Toy</h4>
 					<p class="card-text">Some quick example text to build on the
 						card title and make up the bulk of the card's content.</p>
-					<a href="/QAProject/ProductDetails" class="btn btn-primary">Go somewhere</a>
+					<label>£2.99</label>
+					<a href="/QAProject/ProductDetails" class="btn btn-primary">More Info</a>
 				</div>
 			</div>
 		</div>

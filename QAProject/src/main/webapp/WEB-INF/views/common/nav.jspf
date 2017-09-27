@@ -12,6 +12,9 @@
         <a class="nav-link" href="/QAProject/ProductGallery">Gallery</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="/QAProject/ShoppingBasket">Shopping Basket</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#">Account</a>
       </li>
       <li class="nav-item">
