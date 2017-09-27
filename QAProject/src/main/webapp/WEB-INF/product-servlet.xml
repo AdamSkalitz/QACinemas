@@ -35,5 +35,6 @@
 	</bean>
 
 	<mvc:resources mapping="/webjars/**" location="/webjars/" />
+	<mvc:resources mapping="/images/**" location="WEB-INF/resources/images/" />
 	<mvc:annotation-driven />
 </beans>
