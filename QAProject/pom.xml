@@ -23,6 +23,9 @@
 			<version>4.3.11.RELEASE</version>
 		</dependency>
 
+
+
+
 		<!-- http://mvnrepository.com/artifact/org.springframework/spring-web -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -75,20 +78,6 @@
 			<scope>provided</scope>
 		</dependency>
 
-
-
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-redis</artifactId>
-			<version>1.7.1.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-web</artifactId>
-			<version>4.0.3.RELEASE</version>
-		</dependency>
-
 		<dependency>
 
 			<groupId>org.apache.commons</groupId>
@@ -101,6 +90,20 @@
 			<artifactId>jedis</artifactId>
 			<version>2.7.3</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/taglibs/standard -->
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+
 
 	</dependencies>
 	<build>
@@ -119,4 +122,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
+

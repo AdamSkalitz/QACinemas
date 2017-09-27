@@ -25,17 +25,14 @@ public class ProductDAO implements IProductDAO {
 	}
 	
 	public List<Product> getAllProducts() {
-		
 		RowMapper<Product> mapper = new ProductRowMapper();
 		String sql = "select * from Products";
 		return getJdbcTemplate().query(sql, mapper);
 	}
 
-	public Product get(int ProductID) {
-		// TODO Auto-generated method stub
-		return null;
+	public Product getProductByID(int productID) {
+		String sql="SELECT * FROM Products where ProductID=?";
+		return getJdbcTemplate().queryForObject(sql, new Object[]{productID}, new ProductRowMapper());
 	}
 
-	
-	
 }
