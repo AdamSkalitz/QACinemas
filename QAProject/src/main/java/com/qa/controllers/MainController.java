@@ -38,11 +38,6 @@ public class MainController {
 			return "ProductDetails";
 		}
 		
-		@RequestMapping("/ProductGallery")
-		public String productGallery (HttpServletRequest request) {
-			return "ProductGallery";
-		}
-		
 		@RequestMapping("/ThankYou")
 		public String thankYou(HttpServletRequest request) {
 			return "ThankYou";
@@ -52,14 +47,4 @@ public class MainController {
 		public String shoppingCart(HttpServletRequest request) {
 			return "ShoppingBasket";
 		}
-		
-		
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-	
-	
-	
-
 }
