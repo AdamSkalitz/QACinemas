@@ -11,13 +11,13 @@ public class Product implements Serializable {
 	private int ID;
 	private int ProductSubCategoryID;
 	private String Name;
-	private String Color;
+	private String Colour;
 	private String Description;
 	private double StandardCost;
 	private double ListPrice;
 	private String Size;
 	private double Weight;
-	private byte[] image;
+	private String image;
 	//for sort
 	private Date ModifiedDate;
 	
@@ -25,12 +25,12 @@ public class Product implements Serializable {
 		
 	}
 	
-	public Product(int ProductSubCategoryID,String Name,String Color,String Description,double StandardCost,
-			double ListPrice, String Size, double Weight, byte[] image, Date ModifiedDate ){
-		
+	public Product(int ProductSubCategoryID,String Name,String Colour,String Description,double StandardCost,
+			double ListPrice, String Size, double Weight, String image, Date ModifiedDate ){
+
 		this.ProductSubCategoryID = ProductSubCategoryID;
 		this.Name = Name;
-		this.Color = Color;
+		this.Colour = Colour;
 		this.Description = Description;
 		this.StandardCost = StandardCost;
 		this.ListPrice = ListPrice;
@@ -65,12 +65,12 @@ public class Product implements Serializable {
 		Name = name;
 	}
 
-	public String getColor() {
-		return Color;
+	public String getColour() {
+		return Colour;
 	}
 
-	public void setColor(String color) {
-		Color = color;
+	public void setColour(String colour) {
+		Colour = colour;
 	}
 
 	public String getDescription() {
@@ -113,11 +113,11 @@ public class Product implements Serializable {
 		Weight = weight;
 	}
 
-	public byte[] getImage() {
+	public String getImage() {
 		return image;
 	}
 
-	public void setImage(byte[] image) {
+	public void setImage(String image) {
 		this.image = image;
 	}
 
