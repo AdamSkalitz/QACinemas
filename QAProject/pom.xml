@@ -14,7 +14,18 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/taglibs/standard -->
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
 		<!-- Spring dependencies -->
 		<!-- http://mvnrepository.com/artifact/org.springframework/spring-core -->
 		<dependency>
@@ -105,7 +116,6 @@
 			<artifactId>jedis</artifactId>
 			<version>2.7.3</version>
 		</dependency>
-
 	</dependencies>
 	<build>
 		<finalName>QAProject</finalName>
