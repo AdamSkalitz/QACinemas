@@ -17,7 +17,7 @@ public class Product implements Serializable {
 	private double ListPrice;
 	private String Size;
 	private double Weight;
-	private byte[] image;
+	private String image;
 	//for sort
 	private Date ModifiedDate;
 	
@@ -26,7 +26,7 @@ public class Product implements Serializable {
 	}
 	
 	public Product(int ProductSubCategoryID,String Name,String Color,String Description,double StandardCost,
-			double ListPrice, String Size, double Weight, byte[] image, Date ModifiedDate ){
+			double ListPrice, String Size, double Weight, String image, Date ModifiedDate ){
 		
 		this.ProductSubCategoryID = ProductSubCategoryID;
 		this.Name = Name;
@@ -113,11 +113,11 @@ public class Product implements Serializable {
 		Weight = weight;
 	}
 
-	public byte[] getImage() {
+	public String getImage() {
 		return image;
 	}
 
-	public void setImage(byte[] image) {
+	public void setImage(String image) {
 		this.image = image;
 	}
 
