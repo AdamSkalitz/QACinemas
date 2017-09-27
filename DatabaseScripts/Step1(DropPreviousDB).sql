@@ -8,5 +8,3 @@ GO
 
 DROP DATABASE [QAStores]
 GO
-
-
