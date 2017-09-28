@@ -3,11 +3,16 @@
 
 	
 <%@ taglib prefix="x" uri="http://java.sun.com/jstl/xml" %>
-
 <%@ taglib prefix="sql" uri="http://java.sun.com/jstl/sql" %>
-	
-<html>
 <%@ include file="common/header.jspf"%>
+
+<style>
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+</style>
 <body>
 	<%@ include file="common/nav.jspf"%>
 	
@@ -44,6 +49,7 @@
   			<div class="card-block">
     	
     		<button id="${product.ID }" class="btn btn-primar">More Details</button>
+    		
     		<a href="/QAProject/ShoppingBasket" class="btn btn-primar">Add to Cart</a>
   			</div>
 			</div>
