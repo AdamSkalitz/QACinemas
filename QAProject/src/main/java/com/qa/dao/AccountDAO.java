@@ -23,7 +23,6 @@ public class AccountDAO implements IAccountDAO {
 	public void addAccount(Account account) {
 		String sql = "insert into Accounts(AddressID, Name, Email, Phone,Password, ModifiedDate)"
 				+ "	values(?,?,?,?,?,?)";
-		System.out.println(account);
 		LocalDateTime date = LocalDateTime.now();
 		Date modifiedDate = java.sql.Date.valueOf(date.toLocalDate());
 		Object[] params = new Object[]{account.getAddressID(), account.getName(), account.getEmail(), account.getPhone(), account.getPassword(),modifiedDate};

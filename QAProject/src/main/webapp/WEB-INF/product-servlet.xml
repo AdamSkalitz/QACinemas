@@ -39,9 +39,7 @@
 	</bean>
 
 
-	<bean id="accountService" class="com.qa.dao.AccountDAO">
-		<property name="jdbcTemplate" ref="jdbcTemplate" />
-	</bean>
+
 
 
 	<mvc:resources mapping="/webjars/**" location="/webjars/" />
