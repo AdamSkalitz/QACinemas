@@ -1,3 +1,3 @@
 
-create database QAStores;
+create database QAStore;
 go

@@ -31,6 +31,7 @@ public class ProductController {
 	public String showProduct(ModelMap model, @RequestParam int id) {
 		Product p = service.getProductByID(id);
 		model.addAttribute("products",p );
+		model.addAttribute("otherproducts", service.getAllProducts());
 		return "ProductDetails";
 	}
 	

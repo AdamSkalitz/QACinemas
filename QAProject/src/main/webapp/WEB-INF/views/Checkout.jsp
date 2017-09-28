@@ -14,7 +14,7 @@
   <input type="text" name="Username"><br>
    Password:<br>
   <input type="password" name="pwd"><br>
-  <button type="button" class="loginbtn">Log-In</button><br>
+  <button type="button" class="loginbtn"><a href="/QAProject/ThankYou">Log-In</a></button><br>
  </form> 
 	</div>
 	

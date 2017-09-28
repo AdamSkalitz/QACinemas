@@ -13,7 +13,7 @@
 <br><br>
 <b>Order Number: 1234-5678-9012-99</b>
 <br>
-<b>Total Cost: £2.99</b>
+<b>Total Cost: £400.00</b>
 Estimated delivery: Sept. 25th, 2017 - Sept. 29th, 2017</p>
 </center>
 </div>

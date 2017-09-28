@@ -3,7 +3,7 @@
 <%@ include file="common/header.jspf"%>
 <body>
 	<%@ include file="common/nav.jspf"%>
-	
+
 	<div class="container">
 	<h2>Shopping Basket</h2>
 	<table class="table table-striped">

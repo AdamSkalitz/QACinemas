@@ -22,5 +22,6 @@
   <input type="text" name="Phonenumber"><br>
   <button type="submit" class="btn btn-success">Register</button>
  </form> 
+ <button class="btn"><a href="/QAProject/">Submit</a></button>
 </div>
 	<%@ include file="common/footer.jspf"%>
