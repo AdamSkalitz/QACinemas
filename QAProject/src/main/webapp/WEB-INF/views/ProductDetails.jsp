@@ -35,7 +35,7 @@
 			<p></p>
 			<p><span class="last-color">Price:</span> ${products.getListPrice()}</p>
 			<p><span class="last-color">Size:</span> ${products.getSize()}</p>
-			<p><span class="last-color">Weight:</span> ${products.getWeight()}</p>
+			<p><span class="last-color">Weight:</span> ${products.getWeight()} Kg</p>
 		
 		<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group mr-2" role="group" aria-label="First group">
@@ -49,7 +49,7 @@
   			<option value="vw">Large</option>
 			</select>
     <span class="input-group-addon" id="btnGroupAddon">Quantity</span>
-    <input type="text" class="form-control" placeholder="Enter Quanitity" aria-label="Input group example" aria-describedby="btnGroupAddon">
+    <input type="number" min="0" class="form-control" placeholder="Enter Quanitity" aria-label="Input group example" aria-describedby="btnGroupAddon">
   </div>
 </div>
 				</div>
