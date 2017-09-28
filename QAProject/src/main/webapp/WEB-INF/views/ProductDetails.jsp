@@ -9,14 +9,14 @@
 
 	<div class="row">
 
-		<div class="col-md-2">
-			<a href="/QAProject/ProductGallery">Return to gallery</a>
+		<div class="col-md-3">
+			<a class="return-gallery" href="/QAProject/ProductGallery">Return to gallery<span class="glyphicon glyphicon-arrow-left"></span></a>
 		</div>
 
 		<div class="container">
-		<div class="col-md-6 col-md-offset-3 ">
+		<div class="col-md-12 ">
 
-			<h1>${products.getName()}</h1>
+			<h1 class="center margin-bottom">${products.getName()}</h1>
 		</div>
 		</div>
 	</div>
@@ -26,35 +26,34 @@
 			<img src="${products.getImage()}" width=400 height=400 />
 		</div>
 		<div class="col-md-8">
-			Colour: ${products.getColour()} <br> Description:
-			<p>${products.getDescription()}</p>
-			Price: ${products.getListPrice()} <br> Size:
-			${products.getSize()} <br> Weight: ${products.getWeight()} <br>
-
-
-
-			
-			<br>
-				<button class="btn">
-				
-					<a href="/QAProject/ShoppingBasket">Add to cart</a>
-				</button>
-			<br>
-			<br>
-			<select class="form-control col-md-2" >
+		<p><span class="last-color">Colour:</span> ${products.getColour()}</p>
+		<p><span class="last-color">Description:</span> ${products.getDescription()}</p>			 
+			<p></p>
+			<p><span class="last-color">Price:</span> ${products.getListPrice()}</p>
+			<p><span class="last-color">Size:</span> ${products.getSize()}</p>
+			<p><span class="last-color">Weight:</span> ${products.getWeight()}</p>
+		
+		<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <a href="/QAProject/ShoppingBasket"
+				class="btn btn-primary">Add
+				to Cart</a>
+				<span class="input-group-addon" id="btnGroupAddon">Size</span>
+    	<select class="form-control" >
   			<option value="volvo">Small</option>
   			<option value="saab">Medium</option>
   			<option value="vw">Large</option>
 			</select>
-			<br>
-			<br>
-				<input class="input-group-addon" value="1">Quantity</input>
+    <span class="input-group-addon" id="btnGroupAddon">Quantity</span>
+    <input type="text" class="form-control" placeholder="Enter Quanitity" aria-label="Input group example" aria-describedby="btnGroupAddon">
+  </div>
+</div>
+				</div>
 		
-
+			
 		</div>
-	</div>
-	
-	<br />
+		<div class="container">
+
 	<h2>Other Products</h2>
 	<div class="row">
 				<div class="card-deck">
@@ -91,6 +90,7 @@
 		
 		
 
+	</div>
 	</div>
 	
 	<%@ include file="common/footer.jspf"%>
