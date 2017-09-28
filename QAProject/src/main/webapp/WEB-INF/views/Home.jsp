@@ -7,19 +7,7 @@
 <body>
 	<%@ include file="common/nav.jspf"%>
 	<div class="row">
-		<div class="col-md-3">
-			<h2>Filters</h2>
-			<div class="list-group">
-				<a 
-					class="list-group-item list-group-item-action active">
-					Star Wars</a>
-				<a  class="list-group-item list-group-item-action">Marvel</a>
-				<a  class="list-group-item list-group-item-action">DC</a>
-				<a  class="list-group-item list-group-item-action">DR Who</a>
-			
-			</div>
-		</div>
-		<div class="col-md-9">
+		<div class="col-md-12">
 			<div id="carouselExampleControls" class="carousel slide"
 				data-ride="carousel">
 				<div class="carousel-inner">
