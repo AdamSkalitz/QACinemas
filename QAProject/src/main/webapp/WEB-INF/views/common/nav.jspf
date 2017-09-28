@@ -1,5 +1,11 @@
+<style>
+.navbar{background-color:#426BBA;
+		
+ }
+a{color:#fff}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+</style>
+<nav class="navbar navbar-expand-lg  justify-content-between">
   <a class="navbar-brand" href="#">
     	<img src="<c:url value="/images/logo.jpg" />" width="50" height="50" alt="">
   	</a>
@@ -27,9 +33,7 @@
       </li>
       
     </ul>
-    <form class="form-inline">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+
+
   </div>
 </nav>
