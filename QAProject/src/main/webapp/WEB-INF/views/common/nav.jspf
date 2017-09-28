@@ -7,11 +7,9 @@ a{color:#D0D0D0}
 
  .btn-success{background-color:green}
 
+ .btn-success:hover{background-color:green;
+ border-color:green;}
 
-
-.btn:hover{
-	background-color: #426BBA;
-	border-color: #426BBA;
 }
 
 

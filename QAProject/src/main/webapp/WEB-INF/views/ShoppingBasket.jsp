@@ -41,7 +41,7 @@ th{color:#fff}
   </tbody>
 </table>
 <center>
-<button onClick="window.location.href='/QAProject/ThankYou'" class="btn btn-success" >Checkout</a></button>
+<button onClick="window.location.href='/QAProject/Checkout'" class="btn btn-success" >Checkout</a></button>
 	</center>
 	</div>
 
