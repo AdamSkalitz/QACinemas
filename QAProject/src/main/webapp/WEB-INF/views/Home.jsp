@@ -53,7 +53,7 @@
   		  </div>
   		 
     	<img  id="${product.ID }" class="card-img-top imgProduct justify-content-center" src="${product.getImage()}" alt="Card image cap">
-    		<p class="center">£ ${product.listPrice}</p>
+    		<p class="center">Â£ ${product.listPrice}</p>
    			 <div class="extra-spacing"></div>
    		 <div class="card-footer">
    		 	

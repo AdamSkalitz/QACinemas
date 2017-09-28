@@ -102,7 +102,15 @@ values('Actionfigures',0,getdate())
 
 /* Products*/
 insert into Products (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
-values (1, 'LEGO Death Star', 'Lego death star that leeky really wants to buy with his hard earned dollery doos.', 'Black', 400, 400, '20X2', 60.7,getdate());	
+values (1, 'LEGO Death Star', 'Reenact amazing scenes from the Star Wars 
+saga with the Empire’s ultimate planet-zapping weapon—the Death Star!
+ With over 4,000 pieces, this fantastic model has a galaxy of intricate and 
+ authentic environments, including a superlaser control room, 
+ Imperial conference chamber, hangar 
+ bay with moving launch rack and Lord Vader’s TIE 
+ Advanced with space for Vader inside, Emperor Palpatine’s 
+ throne room, Droid maintenance room, detention block, 
+ trash compactor, tractor beam, cargo area, turbo laser with spring-loaded shooters and seats for the 2 Death Star Gunners, and 2 movable turbo laser towers. This fantastic set also includes 23 iconic minifigures and 2 Droids to ensure hours of Star Wars battle fun.', 'Black', 400, 400, '20X2', 60.7,getdate());	
 
 insert into Products (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
 values (2, 'Marvel Legends: Captain America', 'Get ready for action with the Captain America Marvel Legends Action Figures Wave 2! 
@@ -111,13 +119,13 @@ Spanning the history of the comics plus the movies, these 6-inch scale action fi
 insert into Products (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
 values (2, 'Deluxe Action Figure: Hulkbuster Age Of Ultron', 'This is the Iron Man armour you have been waiting for! Since the first official appearance of the massive anti-Hulk Iron Man suit, Hulkbuster, in Marvel’s Avengers: Age of Ultron trailer, fans worldwide have been filled with excitement!
 Today Sideshow Collectibles and Hot Toys are proud to officially introduce the spectacular Hulkbuster Sixth Scale Collectible Figure! The movie-accurate collectible figure is specially crafted based on the image of Hulkbuster in the film. This colossal figure stands approximately 55cm (21 inches) tall and features a Mark XLIII bust inside the Hulkbuster with LED light-up eyes and arc reactor on chest. Hulkbuster features metallic red, gold and silver armour with weathering effect, and over 16 LED light-up areas in the eyes, chest, repulsor palms, back, and legs.
-Prepare to make room for this gigantic machine in your Avengers: Age of Ultron collection!', 'Red and Gold', 59.99, 59.99, '17.2cm',5.2 ,getdate());	
+Prepare to make room for this gigantic machine in your Avengers: Age of Ultron collection!', 'Red and Gold', 59.99, 59.99, '55cm',5.2 ,getdate());	
 
 insert into Products (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
 values (2, 'Itty Bitty Spiderman', 'Taking iconic characters from film, TV and comics, these adorable soft toys are the perfect gift for just about anyone.', 'Blue and Red', 5.99, 5.99, '11.2cm',3.2 ,getdate());	
 
 insert into Products (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
-values (2, 'The Last Jedi Elite Praetorian Guard', 'Kids and fans alike can imagine the biggest battles and missions in the Star Wars saga with figures from The Black Series! With exquisite features and decoration, this series embodies the quality and realism that Star Wars devotees love.This figure features premium detail and multiple points of articulation, and accessories.', 'Red', 25.99, 25.99, '15.2cm',3.2 ,getdate());	
+values (2, 'The Last Jedi Elite Praetorian Guard', 'This 15cm Star Wars The Last Jedi Black Series Elite Praetorian Guard 15cm Figure is carefully detailed to look like the character from Star Wars: The Last Jedi. This figure features premium detail and multiple points of articulation, and includes 1 character-inspired accessory.', 'Red', 25.99, 25.99, '15.2cm',3.2 ,getdate());	
 
 /* product category for shirts*/
 insert into ProductCategories(Name,ModifiedDate)
@@ -132,13 +140,14 @@ values('Casual',1,getdate())
 
 /* Products*/
 insert into Products (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
-values (3, 'Captain America Uniform', 'Dead, not dead, somebody else… whatever!!! You can’t go wrong with the Avengers finest - Captain America!This outstanding sewn T-Shirt features Cap’s iconic costume design as worn by Mr Rogers himself!', 'Multi', 17.99, 17.99, '86-91', 4.6,getdate());	
+values (3, 'Captain America T-Shirt', 'This very cool distressed look tee comes complete with Caps iconic shield design. 
+Go enrol in a super solder program, join the Avengers and take it to the Red Skul!', 'Multi', 17.99, 17.99, '86-91', 4.6,getdate());	
 
 insert into Products (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
 values (3, 'Doctor Who T-Shirt: Silhouette Grid', '11 Doctors, 11 silhouettes… what more could you ask for in a tee!', 'Black', 17.99, 17.99, '86-91', 1.6,getdate());	
 
 insert into Products (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
-values (3, 'Rogue One: T-Shirt: AT-ACT Beach', 'Feel the force with these amazing Star Wars: Rogue One tees!', 'Cream', 17.99, 17.99, '86-91', 0.6,getdate());	
+values (3, 'Star Wars T-Shirt', 'Relive your favourite Star Wars moments with this awesome t-shirt.', 'Cream', 17.99, 17.99, '86-91', 0.6,getdate());	
 
 /* product category for Bags*/
 
@@ -151,7 +160,7 @@ values('RetroBag',2,getdate())
 
 /* Products*/
 insert into Products (ProductSubCategoryID, Name, Description, Colour, StandardCost, ListPrice, Size, Weight,ModifiedDate)
-values (4, 'TARDIS', 'Step out in style with this great retro bag featuring the TARDIS!', 'Blue', 24.99, 24.99, '38 x 28 x 5 cm', 5.3 ,getdate());	
+values (4, 'Doctor Who Tardis Messenger Bag', 'Step out in style with this great retro bag featuring the TARDIS!', 'Blue', 24.99, 24.99, '38 x 28 x 5 cm', 5.3 ,getdate());	
 
 /* product category for Books*/
 
