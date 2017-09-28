@@ -24,7 +24,6 @@ public class ProductController {
 	@RequestMapping(value = "/ProductGallery", method = RequestMethod.GET)
 	public String showProducts(ModelMap model) {
 		model.addAttribute("products", service.getAllProducts());
-
 		return "ProductGallery";
 	}
 	

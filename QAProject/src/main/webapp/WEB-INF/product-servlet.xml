@@ -33,6 +33,10 @@
 	<bean id="productService" class="com.qa.dao.ProductDAO">
 		<property name="jdbcTemplate" ref="jdbcTemplate" />
 	</bean>
+	
+		<bean id="accountService" class="com.qa.dao.AccountDAO">
+		<property name="jdbcTemplate" ref="jdbcTemplate" />
+	</bean>
 
 	<mvc:resources mapping="/webjars/**" location="/webjars/" />
 	<mvc:resources mapping="/images/**" location="WEB-INF/resources/images/" />

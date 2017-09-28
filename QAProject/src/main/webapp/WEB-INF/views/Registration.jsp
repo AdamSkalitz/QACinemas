@@ -7,19 +7,20 @@
 
 <div class="form-group col-md-12">
 <h1>Registration</h1>
-<form >
+<form action="/AddAccount" method="POST">
    Name:<br>
-  <input type="text" name="Name"><br>
+  <input type="text" name="Name" class="form-control"><br>
    Email:<br>
   <input type="text" name="Email"><br>
    Confirm Email:<br>
   <input type="text" name="ConfirmEmail"><br>
    Password:<br>
-  <input type="text" name="Password"><br>
+  <input type="password" name="Password"><br>
    Confirm Password:<br>
-  <input type="text" name="ConfirmPassword"><br>
-   Phonenumber:<br>
+  <input type="password" name="ConfirmPassword"><br>
+   PhoneNumber:<br>
   <input type="text" name="Phonenumber"><br>
+  <button type="submit" class="btn btn-success">Register</button>
  </form> 
 </div>
 	<%@ include file="common/footer.jspf"%>
