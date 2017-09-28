@@ -49,7 +49,7 @@
   			<option value="vw">Large</option>
 			</select>
     <span class="input-group-addon" id="btnGroupAddon">Quantity</span>
-    <input type="number" min="0" class="form-control" placeholder="Enter Quanitity" aria-label="Input group example" aria-describedby="btnGroupAddon">
+    <input type="number" min="0" class="form-control" placeholder="Enter Quantity" aria-label="Input group example" aria-describedby="btnGroupAddon">
   </div>
 </div>
 				</div>
