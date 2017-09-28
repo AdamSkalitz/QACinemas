@@ -12,6 +12,8 @@
    Password:<br>
   <input type="password" name="pwd"><br>
   </form> 
+  <button class="btn"><a href="/QAProject/">Submit</a></button>
+  <a href="/QAProject/Registration">Don't have an account? Register Here</a>
 </div>
 
 
