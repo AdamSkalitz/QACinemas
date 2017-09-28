@@ -53,9 +53,11 @@
 
 
 
+
 	<div class="row">
 		
 	<c:forEach begin="0" end="3" var="product" items="${products}">
+
 
 	
 		<div class="col-lg-3 col-md-6 col-sm-6"> 
@@ -65,7 +67,7 @@
   		  </div>
   		 
     	<img  id="${product.ID }" class="card-img-top imgProduct justify-content-center" src="${product.getImage()}" alt="Card image cap">
-    		<p class="center">£ ${product.listPrice}</p>
+    		<p class="center">Â£ ${product.listPrice}</p>
    			 <div class="extra-spacing"></div>
    		 <div class="card-footer">
    		 	
