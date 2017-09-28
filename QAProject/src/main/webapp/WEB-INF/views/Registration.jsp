@@ -7,21 +7,23 @@
 
 <div class="form-group col-md-12">
 <h1>Registration</h1>
-<form action="/AddAccount" method="POST">
+<form action="/QAProject/AddAccount" method="POST">
    Name:<br>
-  <input type="text" name="Name" class="form-control"><br>
+  <input type="text" name="Name" class="form-control" required><br>
    Email:<br>
-  <input type="text" name="Email"><br>
+  <input type="text" name="Email" class="form-control" required><br>
    Confirm Email:<br>
-  <input type="text" name="ConfirmEmail"><br>
+  <input type="text" name="ConfirmEmail" class="form-control" required><br>
    Password:<br>
-  <input type="password" name="Password"><br>
+  <input type="password" name="Password" class="form-control" required><br>
    Confirm Password:<br>
-  <input type="password" name="ConfirmPassword"><br>
-   PhoneNumber:<br>
-  <input type="text" name="Phonenumber"><br>
-  <button type="submit" class="btn btn-success">Register</button>
+  <input type="password" name="ConfirmPassword" class="form-control" required><br>
+   PhoneNumber:
+   <br>
+  <input type="text" name="Phone" class="form-control" required>
+  <br>
+  <button type="submit" class="btn btn-success">Submit</button>
  </form> 
- <button class="btn"><a href="/QAProject/">Submit</a></button>
 </div>
 	<%@ include file="common/footer.jspf"%>
+	

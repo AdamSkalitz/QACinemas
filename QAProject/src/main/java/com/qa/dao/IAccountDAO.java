@@ -8,5 +8,6 @@ public interface IAccountDAO {
 
 	public void addAccount(Account account);
 	
+	public Account getAccount(String u, String p);
 	
 }

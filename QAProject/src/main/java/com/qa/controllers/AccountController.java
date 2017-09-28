@@ -1,6 +1,7 @@
 package com.qa.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -22,7 +23,7 @@ public class AccountController {
 	@RequestMapping(value = "/AddAccount", method = RequestMethod.POST)
 	public String addAccount(ModelMap model, Account account, BindingResult result) {
 		if (result.hasErrors())
-			return "product";
+			return "account";
 		
 		service.addAccount(account);
 		
@@ -30,4 +31,24 @@ public class AccountController {
 		
 		return "redirect:/";
 	}
+	
+	@RequestMapping (value = "/SigninUser", method = RequestMethod.POST)
+	public String signin(ModelMap model, Account account, BindingResult result) {
+		
+		if (result.hasErrors()) 
+			return "/";
+		
+		try{
+		Account acc = service.getAccount(account.getName(), account.getPassword());
+		}
+		catch(EmptyResultDataAccessException ex){
+			return "/Error";
+		}
+		 		
+		model.clear();
+		
+		return "/LoggedIn";
+	
+	}
+	
 }

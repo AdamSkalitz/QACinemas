@@ -4,17 +4,17 @@
 <body>
 	<%@ include file="common/nav.jspf"%>
 
-<div class="form-group col-md-12">
-<h1>Sign In</h1>
-<form >
-   Username:<br>
-  <input type="text"  name="Username"><br>
-   Password:<br>
-  <input type="password" name="pwd"><br>
-  </form> 
-  <button class="btn"><a href="/QAProject/">Submit</a></button>
-  <a href="/QAProject/Registration">Don't have an account? Register Here</a>
-</div>
+	<div class="form-group col-md-12">
+		<h1>Sign In</h1>
+		<form action="/QAProject/SigninUser" method="POST">
+			Username:<br> <input type="text" name="name" class="form-control" required><br>
+			Password:<br> <input type="password" name="password" class="form-control" required><br>
+			<button type="submit" class="btn btn-success">Submit</button>
+		</form>
+		  
+		<a href="/QAProject/Registration">Don't have an account? Register
+			Here</a>
+	</div>
 
 
 	<%@ include file="common/footer.jspf"%>

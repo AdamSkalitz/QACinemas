@@ -2,6 +2,7 @@ package com.qa.dao;
 
 import java.sql.Date;
 import java.sql.Types;
+import java.time.LocalDateTime;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -20,11 +21,21 @@ public class AccountDAO implements IAccountDAO {
 	}
 
 	public void addAccount(Account account) {
-		String sql = "insert into Accounts(AccountID, AddressID, Name, Email, Phone,Password, ModifiedDate)"
-				+ "	values(?,?,?,?,?,?,?)";
-		Object[] params = new Object[]{account.getID(), account.getAddressID(), account.getName(), account.getEmail(), account.getPhone(), account.getPassword(), account.getModifiedDate()};
-		int[] types = new int[]{Types.INTEGER, Types.INTEGER, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.DATE};
+		String sql = "insert into Accounts(AddressID, Name, Email, Phone,Password, ModifiedDate)"
+				+ "	values(?,?,?,?,?,?)";
+		System.out.println(account);
+		LocalDateTime date = LocalDateTime.now();
+		Date modifiedDate = java.sql.Date.valueOf(date.toLocalDate());
+		Object[] params = new Object[]{account.getAddressID(), account.getName(), account.getEmail(), account.getPhone(), account.getPassword(),modifiedDate};
+		int[] types = new int[]{Types.INTEGER, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.DATE};
 		getJdbcTemplate().update(sql, params, types);
+	}
+	
+	public Account getAccount(String name, String password) {
+		String sql = "SELECT * from Accounts where Name = ?";
+		Account account = getJdbcTemplate().queryForObject(sql, new Object[] {name}, new AccountRowMapper());
+		return account;
+		
 	}
 
 }

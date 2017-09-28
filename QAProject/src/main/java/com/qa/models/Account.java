@@ -83,4 +83,12 @@ public class Account {
 		ModifiedDate = modifiedDate;
 	}
 
+	@Override
+	public String toString() {
+		return "Account [ID=" + ID + ", AddressID=" + AddressID + ", Name=" + Name + ", Email=" + Email + ", Phone="
+				+ Phone + ", Password=" + Password + ", ModifiedDate=" + ModifiedDate + "]";
+	}
+	
+	
+
 }
