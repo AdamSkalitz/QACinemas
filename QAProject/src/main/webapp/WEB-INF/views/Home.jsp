@@ -55,7 +55,7 @@
 
 
 	<div class="row">
-
+		
 	<c:forEach begin="0" end="3" var="product" items="${products}">
 	
 		<!-- Card -->
