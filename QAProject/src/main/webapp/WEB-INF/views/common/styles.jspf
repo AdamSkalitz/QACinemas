@@ -1,0 +1,34 @@
+<style>
+.card-img-top{
+width:12rem;
+height:9rem;
+margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.card-title {
+font-size: 1.1rem;
+margin-top: 1rem;
+margin-bottom: 2 rem;
+text-align: center;
+}
+.card-footer{
+margin-top: 2 rem;
+position:absolute;
+  bottom:0;
+  width:100%;
+}
+.card-deck .card{
+margin-top: 1rem;
+  padding-bottom:50px;
+  }
+  .extra-spacing{
+  margin-top: 4rem;
+  }
+  .center {
+  text-align: center;
+  }
+  .btn-xs-font{
+      font-size: 0.75rem;
+  }
+</style>
