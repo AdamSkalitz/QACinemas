@@ -10,6 +10,7 @@
   <thead class="thead-inverse">
     <tr>
       <th>Product</th>
+      <th>Size</th>
       <th>Quantity</th>
       <th>Price</th>
       <th>Total</th>
@@ -17,12 +18,13 @@
   </thead>
   <tbody>
     <tr>
-      <td><img height=250 width=250 src="https://images-na.ssl-images-amazon.com/images/I/91Qa5J9sH-L._SL1500_.jpg" class="img-responsive" alt="Cinque Terre">
-       Lego Death Star
+      <td><img height=250 width=250 src="https://www.truffleshuffle.co.uk/store/images_high_res/Mens_Black_Star_Wars_Logo_T_Shirt_hi_res.jpg" class="img-responsive" alt="Cinque Terre">
+       Star Wars T-Shirt
       </td>
+      <td>Medium</td>
       <td>1</td>
-      <td>£400.00</td>
-      <td>£400.00</td>
+      <td>£17.99</td>
+      <td>£17.99</td>
     </tr>
 
   </tbody>

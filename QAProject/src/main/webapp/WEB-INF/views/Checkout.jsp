@@ -14,7 +14,7 @@
   <input type="text" name="Username"><br>
    Password:<br>
   <input type="password" name="pwd"><br>
-  <button type="button" class="loginbtn"><a href="/QAProject/ThankYou">Log-In</a></button><br>
+  <button type="button" class="loginbtn btn"><a href="/QAProject/ThankYou">Log-In</a></button><br>
  </form> 
 	</div>
 	
@@ -31,7 +31,7 @@
   <input type="text" name="Address2"><br>
    Post code:<br>
   <input type="text" name="Postcode"><br>
-   <button type="button" class="Checkoutbtn"><a href="/QAProject/ThankYou">Checkout</a></button><br>
+   <button type="button" class="Checkoutbtn btn"><a href="/QAProject/ThankYou">Checkout</a></button><br>
  </form> 
 			</div>
 		</div>

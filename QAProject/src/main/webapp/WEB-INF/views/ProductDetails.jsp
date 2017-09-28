@@ -12,10 +12,11 @@
 			<a href="/QAProject/ProductGallery">Return to gallery</a>
 		</div>
 
-		
-		<div class="col-md-10">
+		<div class="container">
+		<div class="col-md-6 col-md-offset-3 ">
 
 			<h1>${products.getName()}</h1>
+		</div>
 		</div>
 	</div>
 
@@ -31,14 +32,23 @@
 
 
 
-			<div class="col-md-2">
+			
+			<br>
 				<button class="btn">
+				
 					<a href="/QAProject/ShoppingBasket">Add to cart</a>
 				</button>
-			</div>
-			<div class="col-md-2">
-				<input class="btn" value="1">Quantity</input>
-			</div>
+			<br>
+			<br>
+			<select class="form-control col-md-2" >
+  			<option value="volvo">Small</option>
+  			<option value="saab">Medium</option>
+  			<option value="vw">Large</option>
+			</select>
+			<br>
+			<br>
+				<input class="input-group-addon" value="1">Quantity</input>
+		
 
 		</div>
 	</div>
@@ -52,10 +62,10 @@
 			<!-- Card -->
 			<div "class="col-md-3">
 				<div class="card" style="width: 20rem;">
-					<img id="${products.ID }" class="card-img-top" width=250 height=250
+					<img class="imgProduct" id="${products.ID }" class="card-img-top" width=250 height=250
 						src="${products.getImage()}" alt="Card image cap">
 					<div class="card-block">
-						<h4 id="${products.ID }" class="card-title">${products.name}</h4>
+						<h4 id="${products.ID }" class="card-title list-group-item">${products.name}</h4>
 					</div>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item">£ ${products.listPrice}</li>
@@ -83,7 +93,7 @@
 			window.location.href = "/QAProject/ProductDetails?id=" + id
 		});
 
-		$(document).on('click', 'img', function() {
+		$(document).on('click', '.imgProduct', function() {
 			var id = this.id
 
 			window.location.href = "/QAProject/ProductDetails?id=" + id
