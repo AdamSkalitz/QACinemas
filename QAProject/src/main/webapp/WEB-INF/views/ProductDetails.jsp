@@ -43,10 +43,7 @@
 		<div class="col-md-2">
 			<input class="btn" value="1">Quantity</input>
 		</div>
-		<div class="col-md-2">
-			<button class="btn">Options</button>
-
-</div>
+	
 	</div>
 	</div>
 	</div>

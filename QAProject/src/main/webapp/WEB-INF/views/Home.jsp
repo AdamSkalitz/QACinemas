@@ -24,18 +24,18 @@
 				data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="d-block w-100"
+						<img height=500 width=500 class="d-block w-100"
 							src="https://lumiere-a.akamaihd.net/v1/images/image_ccc4b657.jpeg"
 							alt="First slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-100"
-							src="https://lumiere-a.akamaihd.net/v1/images/image_ccc4b657.jpeg"
+						<img height=500 width=500 class="d-block w-100"
+							src="http://vignette4.wikia.nocookie.net/avengersearthsmightiestheroes/images/4/4c/Marvel%27s_Avengers_Assemble.jpg/revision/latest?cb=20120714201800"
 							alt="Second slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-100"
-							src="https://lumiere-a.akamaihd.net/v1/images/image_ccc4b657.jpeg"
+						<img height=500 width=500 class="d-block w-100"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
 							alt="Third slide">
 					</div>
 				</div>
