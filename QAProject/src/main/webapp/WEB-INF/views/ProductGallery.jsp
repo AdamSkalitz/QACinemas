@@ -2,13 +2,12 @@
 	pageEncoding="ISO-8859-1"%>
 
 
+
 <%@ taglib prefix="x" uri="http://java.sun.com/jstl/xml"%>
-
 <%@ taglib prefix="sql" uri="http://java.sun.com/jstl/sql"%>
-
-<html>
 <%@ include file="common/header.jspf"%>
 <%@ include file="common/styles.jspf"%>
+
 <body>
 	<%@ include file="common/nav.jspf"%>
 
@@ -25,7 +24,6 @@
 								<h4 id="${product.ID }"
 									class="card-title justify-content-center">${product.name}</h4>
 							</div>
-
 							<img id="${product.ID }"
 								class="card-img-top imgProduct justify-content-center"
 								src="${product.getImage()}" alt="Card image cap">
@@ -37,7 +35,7 @@
 									class="  btn btn-primary btn-xs btn-xs-font">More
 									Details</button>
 								<a href="/QAProject/ShoppingBasket"
-									class="btn btn-primary moreDetails  btn-xs btn-xs-font">Add
+									class="btn btn-success moreDetails  btn-xs btn-xs-font">Add
 									to Cart</a>
 
 							</div>

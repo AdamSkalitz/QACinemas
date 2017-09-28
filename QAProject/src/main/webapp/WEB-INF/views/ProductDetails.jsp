@@ -6,11 +6,15 @@
 	<%@ include file="common/nav.jspf"%>
 
 
-
+<style>
+.return{background-color:#426BBA}
+</style>
 	<div class="row">
+
 
 		<div class="col-md-3">
 			<a class="return-gallery" href="/QAProject/ProductGallery">Return to gallery<span class="glyphicon glyphicon-arrow-left"></span></a>
+
 		</div>
 
 		<div class="container">
@@ -69,7 +73,7 @@
 							<img id="${products.ID }"
 								class="card-img-top imgProduct justify-content-center"
 								src="${products.getImage()}" alt="Card image cap">
-							<p class="center">£ ${product.listPrice}</p>
+							<p class="center">ï¿½ ${product.listPrice}</p>
 							<div class="extra-spacing"></div>
 							<div class="card-footer">
 

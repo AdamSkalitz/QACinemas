@@ -2,6 +2,16 @@
 	pageEncoding="ISO-8859-1"%>
 
 <%@ include file="common/header.jspf"%>
+<style>
+
+.btn{background-color:#426BBA;
+	border-color: #426BBA;
+	}
+
+.btn:hover{
+	background-color: #426BBA;
+	border-color: #426BBA;
+}</style>
 <body>
 	<%@ include file="common/nav.jspf"%>
 
@@ -22,7 +32,7 @@
    <br>
   <input type="text" name="Phone" class="form-control" required>
   <br>
-  <button type="submit" class="btn btn-success">Submit</button>
+  <button type="submit" class="btn btn-success" id="btn">Submit</button>
  </form> 
 </div>
 	<%@ include file="common/footer.jspf"%>

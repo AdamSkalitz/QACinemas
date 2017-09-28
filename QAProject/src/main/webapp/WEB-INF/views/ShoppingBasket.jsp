@@ -3,13 +3,23 @@
 <%@ include file="common/header.jspf"%>
 <body>
 	<%@ include file="common/nav.jspf"%>
+	<%@ include file="common/styles.jspf"%>
+
+<style>
+.basketTable{background-color:#426BBA;}
+th{color:#fff}
+
+</style>
 	
 	<div class="container">
+	<center>
 	<h2>Shopping Basket</h2>
+	</center>
 	<table class="table table-striped">
-  <thead class="thead-inverse">
+  <thead class="basketTable">
     <tr>
-      <th>Product</th>
+      <th>Product Image</th>
+      <th>Product Name</th>
       <th>Size</th>
       <th>Quantity</th>
       <th>Price</th>
@@ -19,8 +29,9 @@
   <tbody>
     <tr>
       <td><img height=250 width=250 src="https://www.truffleshuffle.co.uk/store/images_high_res/Mens_Black_Star_Wars_Logo_T_Shirt_hi_res.jpg" class="img-responsive" alt="Cinque Terre">
-       Star Wars T-Shirt
+       
       </td>
+      <td>Star Wars T-Shirt</td>
       <td>Medium</td>
       <td>1</td>
       <td>£17.99</td>
@@ -29,8 +40,9 @@
 
   </tbody>
 </table>
-
-<button class="btn" ><a href="/QAProject/Checkout">Checkout</a></button>
+<center>
+<button onClick="window.location.href='/QAProject/Checkout'" class="btn btn-success" >Checkout</a></button>
+	</center>
 	</div>
 
 	<%@ include file="common/footer.jspf"%>

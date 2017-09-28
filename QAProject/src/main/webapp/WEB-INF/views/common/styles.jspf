@@ -31,6 +31,7 @@ margin-top: 1rem;
   .btn-xs-font{
       font-size: 0.75rem;
   }
+
   .return-gallery{
 
   color: #1E1E24;
@@ -47,4 +48,5 @@ margin-top: 1rem;
   .margin-bottom{
   margin-bottom: 1rem;
   }
+
 </style>
