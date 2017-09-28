@@ -5,11 +5,14 @@
 	<%@ include file="common/nav.jspf"%>
 
 
-
+<style>
+.return{background-color:#426BBA}
+</style>
 	<div class="row">
 
 		<div class="col-md-2">
-			<a href="/QAProject/ProductGallery">Return to gallery</a>
+		<br>
+			<a href="/QAProject/ProductGallery" class="return" >Return to gallery</a>
 		</div>
 
 		<div class="container">
