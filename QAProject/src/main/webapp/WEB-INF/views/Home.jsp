@@ -27,6 +27,11 @@
 							src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
 							alt="Third slide">
 					</div>
+					<div class="carousel-item">
+						<img height=500 width=500 class="d-block w-100"
+							src="https://upload.wikimedia.org/wikipedia/de/6/61/New-Doctor-Who-Logo-doctor-who-HD.jpg"
+							alt="Third slide">
+					</div>
 				</div>
 				<a class="carousel-control-prev" href="#carouselExampleControls"
 					role="" data-slide="prev"> <span
@@ -43,7 +48,16 @@
 		<div class="container">
 		<div class="row">
 		<div class="card-deck">
-		<c:forEach begin="0" end="3" var="product" items="${products}">
+
+
+
+
+
+
+	<div class="row">
+		
+	<c:forEach begin="0" end="3" var="product" items="${products}">
+
 
 	
 		<div class="col-lg-3 col-md-6 col-sm-6"> 

@@ -38,6 +38,12 @@
 		<property name="jdbcTemplate" ref="jdbcTemplate" />
 	</bean>
 
+
+	<bean id="accountService" class="com.qa.dao.AccountDAO">
+		<property name="jdbcTemplate" ref="jdbcTemplate" />
+	</bean>
+
+
 	<mvc:resources mapping="/webjars/**" location="/webjars/" />
 	<mvc:resources mapping="/images/**" location="WEB-INF/resources/images/" />
 	<mvc:annotation-driven />
