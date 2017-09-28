@@ -4,6 +4,7 @@
 	
 
 <%@ include file="common/header.jspf"%>
+<%@ include file="common/styles.jspf"%>
 <body>
 	<%@ include file="common/nav.jspf"%>
 	<div class="row">
@@ -18,7 +19,7 @@
 					</div>
 					<div class="carousel-item">
 						<img height=500 width=500 class="d-block w-100"
-							src="http://vignette4.wikia.nocookie.net/avengersearthsmightiestheroes/images/4/4c/Marvel%27s_Avengers_Assemble.jpg/revision/latest?cb=20120714201800"
+							src="https://techstunt.com/wp-content/uploads/2017/01/nintchdbpict000254082622-1-12.jpg"
 							alt="Second slide">
 					</div>
 					<div class="carousel-item">
@@ -39,36 +40,34 @@
 			</div>
 		</div>
 	</div>
+		<div class="container">
+		<div class="row">
+		<div class="card-deck">
+		<c:forEach begin="0" end="3" var="product" items="${products}">
 
-
-
-	<div class="row">
-
-	<c:forEach begin="0" end="3" var="product" items="${products}">
 	
-		<!-- Card -->
-		<div "class="col-md-3">			
-			<div class="card" style="width: 20rem;">
-  			<img  id="${product.ID }" class="card-img-top imgProduct" width=250 height=250 src="${product.getImage()}" alt="Card image cap">
-  			<div class="card-block">
-    		<h4  id="${product.ID }" class="card-title">${product.name}</h4>
-  			</div>
-  			<ul class="list-group list-group-flush">
-    		<li class="list-group-item">£ ${product.listPrice}</li>
-  			</ul>
-  			<div class="card-block">
+		<div class="col-lg-3 col-md-6 col-sm-6"> 
+  		<div class="card">
+  		 <div class="card-block">
+    	  <h4 id="${product.ID }" class="card-title justify-content-center">${product.name}</h4>
+  		  </div>
+  		 
+    	<img  id="${product.ID }" class="card-img-top imgProduct justify-content-center" src="${product.getImage()}" alt="Card image cap">
+    		<p class="center">Â£ ${product.listPrice}</p>
+   			 <div class="extra-spacing"></div>
+   		 <div class="card-footer">
+   		 	
+    		 <button id="${product.ID }" class="  btn btn-primary btn-xs btn-xs-font">More Details</button>
+    		<a href="/QAProject/ShoppingBasket" class="btn btn-primary moreDetails  btn-xs btn-xs-font">Add to Cart</a>
     	
-    		<button id="${product.ID }" class="btn btn-primar">More Details</button>
-    		<a href="/QAProject/ShoppingBasket" class="btn btn-primar moreDetails">Add to Cart</a>
-  			</div>
+   			 </div>
+  				</div> 
+
+				</div>
+			</c:forEach>
 			</div>
 		</div>
- 		
-   </c:forEach>
-
-
-	</div>
-
+			</div>
 	<script>
 		$('.carousel').carousel({
 			interval : 2000
