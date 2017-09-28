@@ -30,7 +30,7 @@
 		<div class="col-md-8">
 			Colour: ${products.getColour()} <br> Description:
 			<p>${products.getDescription()}</p>
-			Price: £${products.getListPrice()} <br> Size:
+			Price: ${products.getListPrice()} <br> Size:
 			${products.getSize()} <br> Weight: ${products.getWeight()} <br>
 
 
@@ -55,7 +55,7 @@
 
 		</div>
 	</div>
-	</div>
+	
 	<br />
 	<h2>Other Products</h2>
 	<div class="row">
@@ -71,7 +71,7 @@
 						<h4 id="${products.ID }" class="card-title list-group-item">${products.name}</h4>
 					</div>
 					<ul class="list-group list-group-flush">
-						<li class="list-group-item">£ ${products.listPrice}</li>
+						<li class="list-group-item">${products.listPrice}</li>
 					</ul>
 					<div class="card-block">
 

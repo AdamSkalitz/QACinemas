@@ -3,14 +3,25 @@
 		
  }
 a{color:#D0D0D0}
-.btn{background-color:#426BBA}
+
+
   .btn-success{background-color:green}
+
+.btn{background-color:#426BBA;
+	border-color: #426BBA;}
+
+.btn:hover{
+	background-color: #426BBA;
+	border-color: #426BBA;
+}
+
+
 .list-group-item{text-align:center;}
 a:hover{background-color:white}
 </style>
 <nav class="navbar navbar-expand-lg  justify-content-between">
-  <a class="navbar-brand" href="#">
-    	<img src="<c:url value="/images/logo.jpg" />" width="50" height="50" alt="">
+  <a class="navbar-brand" href="https://www.qa.com/">
+    	<img src="<c:url value="/images/logo2.png" />" width="65" height="65" alt="logo">
   	</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -21,7 +32,6 @@ a:hover{background-color:white}
         <a class="nav-link" href="/QAProject/">Home <span class="sr-only">(current)</span></a>
       </li>
          
-     
       <li class="nav-item">
         <a class="nav-link" href="/QAProject/ProductGallery">Gallery</a>
       </li>
