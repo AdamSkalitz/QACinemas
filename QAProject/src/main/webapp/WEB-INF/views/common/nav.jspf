@@ -3,16 +3,20 @@
 		
  }
 a{color:#D0D0D0}
-.btn{background-color:#426BBA;
-	border-color: #426BBA;}
+
+
+ .btn-success{background-color:green}
+
+
 
 .btn:hover{
 	background-color: #426BBA;
 	border-color: #426BBA;
 }
 
-.list-group-item{text-align:center;}
 
+.list-group-item{text-align:center;}
+a:hover{background-color:white}
 </style>
 <nav class="navbar navbar-expand-lg  justify-content-between">
   <a class="navbar-brand" href="https://www.qa.com/">
@@ -32,9 +36,6 @@ a{color:#D0D0D0}
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/QAProject/ShoppingBasket">Shopping Basket</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link  disabled" href="#">Account</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/QAProject/Signin"">Log in</a>
