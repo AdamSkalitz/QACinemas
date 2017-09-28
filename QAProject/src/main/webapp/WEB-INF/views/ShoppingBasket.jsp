@@ -3,6 +3,7 @@
 <%@ include file="common/header.jspf"%>
 <body>
 	<%@ include file="common/nav.jspf"%>
+	<%@ include file="common/styles.jspf"%>
 
 <style>
 .basketTable{background-color:#426BBA;}

@@ -35,7 +35,7 @@
 									class="  btn btn-primary btn-xs btn-xs-font">More
 									Details</button>
 								<a href="/QAProject/ShoppingBasket"
-									class="btn btn-primary moreDetails  btn-xs btn-xs-font">Add
+									class="btn btn-success moreDetails  btn-xs btn-xs-font">Add
 									to Cart</a>
 
 							</div>
