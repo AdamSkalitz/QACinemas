@@ -1,4 +1,4 @@
-package com.qa.controllers;
+/*package com.qa.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -23,3 +23,4 @@ public class ProductRestController {
 //		return item;
 //	}
 }
+*/

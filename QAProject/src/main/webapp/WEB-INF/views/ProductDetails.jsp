@@ -40,16 +40,19 @@
 		<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group mr-2" role="group" aria-label="First group">
     <a href="/QAProject/ShoppingBasket"
-				class="btn btn-primary">Add
+				class="btn btn-success">Add
 				to Cart</a>
+				
+				<c:if test="${products.getProductSubCategoryID()==3 }">
 				<span class="input-group-addon" id="btnGroupAddon">Size</span>
     	<select class="form-control" >
   			<option value="volvo">Small</option>
   			<option value="saab">Medium</option>
   			<option value="vw">Large</option>
 			</select>
+			</c:if>
     <span class="input-group-addon" id="btnGroupAddon">Quantity</span>
-    <input type="number" min="0" class="form-control" placeholder="Enter Quantity" aria-label="Input group example" aria-describedby="btnGroupAddon">
+    <input type="number" min="1" class="form-control" placeholder="Enter Quantity" aria-label="Input group example" aria-describedby="btnGroupAddon">
   </div>
 </div>
 				</div>
@@ -68,12 +71,14 @@
 							<div class="card-block">
 								<h4 id="${products.ID }"
 									class="card-title justify-content-center">${products.name}</h4>
+									<br>
+				
 							</div>
-
+		
 							<img id="${products.ID }"
 								class="card-img-top imgProduct justify-content-center"
 								src="${products.getImage()}" alt="Card image cap">
-							<p class="center">ï¿½ ${product.listPrice}</p>
+							<p class="center">£${products.listPrice}</p>
 							<div class="extra-spacing"></div>
 							<div class="card-footer">
 
@@ -81,7 +86,7 @@
 									class="  btn btn-primary btn-xs btn-xs-font">More
 									Details</button>
 								<a href="/QAProject/ShoppingBasket"
-									class="btn btn-primary moreDetails  btn-xs btn-xs-font">Add
+									class="btn btn-success moreDetails  btn-xs btn-xs-font">Add
 									to Cart</a>
 
 							</div>

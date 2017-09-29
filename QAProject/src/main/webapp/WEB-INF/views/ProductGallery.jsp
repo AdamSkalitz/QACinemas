@@ -23,6 +23,7 @@
 							<div class="card-block">
 								<h4 id="${product.ID }"
 									class="card-title justify-content-center">${product.name}</h4>
+							<br>
 							</div>
 							<img id="${product.ID }"
 								class="card-img-top imgProduct justify-content-center"

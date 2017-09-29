@@ -3,11 +3,18 @@
 <%@ include file="common/header.jspf"%>
 <body>
 	<%@ include file="common/nav.jspf"%>
+<style>
 
-<div class="form-group col-md-12">
+.returnLink{color:black;}
+</style>
 
+
+<center>
+<br>
 <h1>Welcome, you are now logged in.</h1>
-</div>
+<br>
+<h1><a class="returnLink" href="/QAProject/ProductGallery">Start Shopping</a></h1>
+</center>
 
 
 	<%@ include file="common/footer.jspf"%>
